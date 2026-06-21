@@ -20,7 +20,7 @@
 <meta property="og:description" content="Tu coche, de Alemania, del mundo o de subasta. Matriculado en Costa Blanca. Sin estrés.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://itv-costablanca.es/">
-<meta property="og:image" content="https://itv-costablanca.es/og-cover.jpg">
+<meta property="og:image" content="https://itv-costablanca.es/assets/img/og-cover.jpg">
 <meta property="og:locale" content="es_ES">
 <meta property="og:locale:alternate" content="en_US">
 <meta property="og:locale:alternate" content="ru_RU">
@@ -28,28 +28,90 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="ITV Costa Blanca — Importación llave en mano">
 <meta name="twitter:description" content="Tu coche, de Alemania, del mundo o de subasta. Matriculado en Costa Blanca.">
-<meta name="twitter:image" content="https://itv-costablanca.es/og-cover.jpg">
+<meta name="twitter:image" content="https://itv-costablanca.es/assets/img/og-cover.jpg">
 <!-- Favicon (inline SVG, gold ITV mark) -->
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A2540'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='800' fill='%23C9A663' text-anchor='middle'%3EITV%3C/text%3E%3C/svg%3E">
-<!-- Schema.org -->
+<!-- Schema.org — business -->
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
   "@type":["AutomotiveBusiness","LocalBusiness"],
+  "@id":"https://itv-costablanca.es/#business",
   "name":"ITV Costa Blanca",
   "description":"Importación llave en mano de coches, motos y náutica desde Alemania, el mercado mundial y subastas internacionales. Aduanas, ITV y matriculación en España.",
   "url":"https://itv-costablanca.es/",
-  "image":"https://itv-costablanca.es/og-cover.jpg",
+  "image":"https://itv-costablanca.es/assets/img/og-cover.jpg",
   "priceRange":"€€€",
-  "areaServed":[{"@type":"AdministrativeArea","name":"Costa Blanca"},{"@type":"Country","name":"España"}],
+  "telephone":"+34644324195",
+  "email":"itv.service.cb@gmail.com",
   "address":{"@type":"PostalAddress","addressLocality":"Dénia","addressRegion":"Alicante","addressCountry":"ES"},
-  "telephone":"+34600000000",
-  "sameAs":[],
+  "geo":{"@type":"GeoCoordinates","latitude":38.8407,"longitude":0.1057},
+  "areaServed":[
+    {"@type":"AdministrativeArea","name":"Costa Blanca"},
+    {"@type":"City","name":"Dénia"},
+    {"@type":"City","name":"Jávea"},
+    {"@type":"City","name":"Calpe"},
+    {"@type":"City","name":"Moraira"},
+    {"@type":"City","name":"Altea"},
+    {"@type":"City","name":"Benidorm"},
+    {"@type":"City","name":"Gandía"},
+    {"@type":"City","name":"Oliva"},
+    {"@type":"City","name":"La Nucía"},
+    {"@type":"City","name":"Villajoyosa"},
+    {"@type":"City","name":"Alicante"}
+  ],
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"}
+  ],
+  "availableLanguage":[
+    {"@type":"Language","name":"Spanish","alternateName":"es"},
+    {"@type":"Language","name":"English","alternateName":"en"},
+    {"@type":"Language","name":"Russian","alternateName":"ru"}
+  ],
+  "sameAs":["__GOOGLE_BUSINESS_PROFILE_URL__","__INSTAGRAM_URL__","__FACEBOOK_URL__"],
   "makesOffer":[
     {"@type":"Offer","itemOffered":{"@type":"Service","name":"Importación desde Alemania"}},
     {"@type":"Offer","itemOffered":{"@type":"Service","name":"Importación del mercado mundial"}},
     {"@type":"Offer","itemOffered":{"@type":"Service","name":"Compra en subasta (Copart, IAAI, Manheim)"}},
     {"@type":"Offer","itemOffered":{"@type":"Service","name":"ITV, aduanas y matriculación"}}
+  ]
+}
+</script>
+<!-- Schema.org — Service (import) -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Service",
+  "serviceType":"Importación de vehículos llave en mano",
+  "name":"Importación de vehículos llave en mano — Costa Blanca",
+  "description":"Búsqueda, compra, transporte, aduanas, ITV y matriculación de coches, motos y náutica desde Alemania, el mercado mundial y subastas internacionales.",
+  "areaServed":{"@type":"AdministrativeArea","name":"Costa Blanca"},
+  "availableLanguage":["es","en","ru"],
+  "provider":{"@id":"https://itv-costablanca.es/#business"}
+}
+</script>
+<!-- Schema.org — FAQ (ES) -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"¿Qué es un salvage title?","acceptedAnswer":{"@type":"Answer","text":"Es un título de \"siniestro total\" emitido tras un accidente o daño. El coche puede restaurarse y volver a circular; nosotros evaluamos el lote con fotos, condition report y VIN antes de pujar, para que sepas exactamente qué compras."}},
+    {"@type":"Question","name":"¿Cuánto cuesta restaurar un coche de subasta?","acceptedAnswer":{"@type":"Answer","text":"Depende del daño. Te damos una estimación orientativa antes de pujar y, si quieres, gestionamos la restauración con nuestro taller partner. Lo verás reflejado en la calculadora."}},
+    {"@type":"Question","name":"¿Qué garantías hay de que el coche llegue en buen estado?","acceptedAnswer":{"@type":"Answer","text":"Inspección pre-bid, fotos y condition report verificados, transporte asegurado y seguimiento del contenedor. Nada se compra a ciegas."}},
+    {"@type":"Question","name":"¿Cuánto tarda la entrega desde EE. UU. o Japón?","acceptedAnswer":{"@type":"Answer","text":"Por norma general entre 8 y 12 semanas puerta a puerta, incluyendo subasta, contenedor, aduanas e ITV. Te damos fechas concretas para cada lote."}},
+    {"@type":"Question","name":"¿Cómo funciona la aduana y el impuesto de matriculación?","acceptedAnswer":{"@type":"Answer","text":"Nos encargamos del despacho de aduanas y del impuesto de matriculación según la antigüedad y emisiones del vehículo. Todo va incluido en el presupuesto llave en mano."}},
+    {"@type":"Question","name":"¿Y si el coche no pasa la ITV?","acceptedAnswer":{"@type":"Answer","text":"Lo solucionamos antes de entregártelo. La entrega siempre es con ITV pasada y vehículo listo para circular."}}
+  ]
+}
+</script>
+<!-- Schema.org — Breadcrumb -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Inicio","item":"https://itv-costablanca.es/"}
   ]
 }
 </script>
@@ -59,7 +121,7 @@
 <style>
   :root{
     --navy:#0A2540; --navy-soft:#0F2F4F; --sand:#E8DAC0; --cream:#FAF7F2;
-    --gold:#C9A663; --gold-deep:#B08D45; --ink:#0A2540; --muted:#5B6B7B;
+    --gold:#C9A663; --gold-deep:#B08D45; --gold-text:#8A6D1F; --ink:#0A2540; --muted:#5B6B7B;
     --line:rgba(10,37,64,.10); --radius:18px; --maxw:1180px;
     --shadow:0 18px 50px -22px rgba(10,37,64,.35);
     --font-head:'Inter Tight',system-ui,sans-serif;
@@ -71,7 +133,7 @@
   body{font-family:var(--font-body);color:var(--ink);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
   h1,h2,h3,h4{font-family:var(--font-head);line-height:1.08;letter-spacing:-.02em;font-weight:700}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
-  .eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-deep);font-weight:600;margin-bottom:18px}
+  .eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-text);font-weight:600;margin-bottom:18px}
   .serif{font-family:var(--font-serif);font-style:italic;font-weight:400}
   a{color:inherit;text-decoration:none}
   section{position:relative}
@@ -191,16 +253,16 @@
   .vcard .price{margin-top:auto;display:flex;align-items:baseline;justify-content:space-between;border-top:1px solid var(--line);padding-top:14px}
   .vcard .price .p{font-family:var(--font-head);font-size:23px;font-weight:700;color:var(--navy)}
   .vcard .price .lk{font-size:12px;color:var(--muted)}
-  .vcard .price .llave{font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--gold-deep);font-weight:600}
+  .vcard .price .llave{font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--gold-text);font-weight:600}
 
   /* SERVICES */
   #serv{background:var(--cream)}
   .acc{max-width:860px;margin:0 auto}
   .ai{border-bottom:1px solid var(--line)}
   .ai .q{width:100%;text-align:left;background:none;border:0;cursor:pointer;padding:24px 6px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-family:var(--font-head);font-weight:600;font-size:19px;color:var(--navy)}
-  .ai .q .ic{font-size:20px;color:var(--gold-deep);width:30px}
+  .ai .q .ic{font-size:20px;color:var(--gold-text);width:30px}
   .ai .q .ttl{flex:1}
-  .ai .q .from{font-size:13px;font-weight:600;color:var(--gold-deep);font-family:var(--font-body)}
+  .ai .q .from{font-size:13px;font-weight:600;color:var(--gold-text);font-family:var(--font-body)}
   .ai .q .chev{transition:.3s;color:var(--muted)}
   .ai.open .q .chev{transform:rotate(180deg)}
   .ai .a{max-height:0;overflow:hidden;transition:.35s}
@@ -241,7 +303,7 @@
   .logo-chip:hover{opacity:1;border-color:var(--gold);transform:translateY(-2px)}
   .badges{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:50px;max-width:860px;margin-left:auto;margin-right:auto}
   .badge{text-align:center;padding:22px 14px;border:1px solid var(--line);border-radius:14px}
-  .badge .b-n{font-family:var(--font-head);font-size:28px;font-weight:800;color:var(--gold-deep)}
+  .badge .b-n{font-family:var(--font-head);font-size:28px;font-weight:800;color:var(--gold-text)}
   .badge .b-l{font-size:13px;color:var(--muted);margin-top:4px}
 
   /* ABOUT */
@@ -323,6 +385,83 @@
     .nav-links{display:none}.burger{display:flex}
     .hero-stats{flex-wrap:wrap;gap:22px}
   }
+
+  /* =========================================================
+     POLISH PASS — design memo (web-designer)
+     navy #0A2540 dominant · gold #C9A663 < 20%
+     ========================================================= */
+
+  /* hover-lift tokens */
+  :root{ --lift:-6px; --lift-btn:-3px; }
+
+  /* 1. Serif display on section H2s + about/contact H2 + itvband h3 (cards h3 stay sans) */
+  .section-head h2,
+  #about h2,
+  #contact h2,
+  .itvband h3{ font-family:var(--font-serif); font-weight:600; letter-spacing:-.015em; font-style:normal; }
+
+  /* 2. Visible focus — gold ring; halo on dark sections */
+  a:focus-visible, button:focus-visible, input:focus-visible,
+  select:focus-visible, .btn:focus-visible{
+    outline:2px solid var(--gold);
+    outline-offset:2px;
+    border-radius:6px;
+  }
+  #how a:focus-visible, #how button:focus-visible,
+  #calc a:focus-visible, #calc button:focus-visible,
+  #calc input:focus-visible, #calc select:focus-visible,
+  #about a:focus-visible, #about button:focus-visible,
+  #contact a:focus-visible, #contact button:focus-visible{
+    outline-color:var(--gold);
+    box-shadow:0 0 0 4px rgba(201,166,99,.28);
+  }
+
+  /* 3. Reduced motion */
+  @media (prefers-reduced-motion:reduce){
+    *,*::before,*::after{
+      animation-duration:.001ms !important;
+      animation-iteration-count:1 !important;
+      transition-duration:.001ms !important;
+      scroll-behavior:auto !important;
+    }
+    .reveal{opacity:1 !important;transform:none !important;}
+  }
+
+  /* 4. Gold discipline — active language pill = navy fill (src-switch keeps gold) */
+  .lang button.active{ background:var(--navy); color:var(--cream); }
+  header.scrolled .lang button.active{ background:var(--navy); color:var(--cream); }
+
+  /* 5. About visual — intentional gold-hairline framed slot (no placeholder copy) */
+  .about-visual{
+    background:linear-gradient(135deg,#16344f,#091d31);
+    border:1px solid rgba(201,166,99,.28);
+    font-size:0; color:transparent;
+  }
+
+  /* 6. Bento air */
+  .steps{ gap:24px; }
+  .origen-grid{ gap:26px; }
+  .step{ padding:34px 26px; }
+  .ochan.de{ transform:translateY(-6px); box-shadow:0 26px 60px -26px rgba(10,37,64,.5); }
+  .ochan.de:hover{ transform:translateY(-10px); }
+
+  /* 7. Unified hover-lift tokens */
+  .step:hover, .ochan:hover, .vcard:hover, .logo-chip:hover{ transform:translateY(var(--lift)); }
+  .btn-gold:hover, .btn-navy:hover, .btn-ghost:hover, .btn-wa:hover{ transform:translateY(var(--lift-btn)); }
+  .ochan.de:hover{ transform:translateY(calc(var(--lift) - 4px)); }
+
+  /* reveal stagger on grids */
+  .steps .reveal:nth-child(2){ transition-delay:.08s; }
+  .steps .reveal:nth-child(3){ transition-delay:.16s; }
+  .steps .reveal:nth-child(4){ transition-delay:.24s; }
+  .origen-grid .reveal:nth-child(2){ transition-delay:.1s; }
+  .origen-grid .reveal:nth-child(3){ transition-delay:.2s; }
+  .badges .reveal:nth-child(2){ transition-delay:.07s; }
+  .badges .reveal:nth-child(3){ transition-delay:.14s; }
+  .badges .reveal:nth-child(4){ transition-delay:.21s; }
+  @media (prefers-reduced-motion:reduce){
+    .steps .reveal,.origen-grid .reveal,.badges .reveal{ transition-delay:0s !important; }
+  }
 </style>
 </head>
 <body>
@@ -374,7 +513,7 @@
       </div>
     </div>
     <div class="hero-visual reveal">
-      <img src="assets/img/hero-1.png" alt="Coche alemán premium importado en la carretera costera de Costa Blanca" loading="eager" fetchpriority="high">
+      <img src="assets/img/hero-1.jpg" data-i18n-alt="hero_img_alt" alt="Coche alemán premium importado en la carretera costera de Costa Blanca" loading="eager" fetchpriority="high">
       <div class="ph">
         <div class="tag" data-i18n="hero_v_tag">Recién llegado · En camino a Dénia</div>
         <div class="car">BMW Serie 5 · 2021</div>
@@ -553,7 +692,7 @@
       <p data-i18n="ab_p1">Somos un equipo afincado en la Costa Blanca que une la precisión alemana con el trato cercano del Mediterráneo. Llevamos años importando, matriculando y entregando vehículos sin que el cliente tenga que pisar una oficina.</p>
       <p data-i18n="ab_p2">Hablamos tu idioma —español, inglés y ruso— y respondemos como lo haría un amigo que entiende de coches y de burocracia española.</p>
     </div>
-    <div class="about-visual reveal" data-i18n="ab_ph">Foto del equipo · placeholder</div>
+    <div class="about-visual reveal" role="img" data-i18n-aria="ab_ph" aria-label="El equipo de ITV Costa Blanca"></div>
   </div>
 </section>
 
@@ -575,7 +714,7 @@
     <h2 data-i18n="ct_h2">Tu próximo vehículo está a un mensaje</h2>
     <p data-i18n="ct_p">Cuéntanos qué buscas y te preparamos un presupuesto llave en mano sin compromiso.</p>
     <div class="contact-cta">
-      <a class="btn btn-wa" href="https://wa.me/34600000000?text=Hola,%20quiero%20importar%20" data-i18n="ct_wa">💬 Escríbenos por WhatsApp</a>
+      <a class="btn btn-wa" href="https://wa.me/34644324195?text=Hola,%20quiero%20importar%20" data-i18n="ct_wa">💬 Escríbenos por WhatsApp</a>
       <a class="btn btn-gold" href="#calc" data-i18n="ct_calc">Calcular importación</a>
     </div>
   </div>
@@ -611,7 +750,7 @@
   </div>
 </div>
 
-<a class="fab" href="https://wa.me/34600000000?text=Hola,%20quiero%20importar%20" aria-label="WhatsApp">💬</a>
+<a class="fab" href="https://wa.me/34644324195?text=Hola,%20quiero%20importar%20" aria-label="WhatsApp">💬</a>
 
 <script>
 /* ============================================================
@@ -620,6 +759,7 @@
 const CONFIG={
   WHATSAPP:"34644324195",           // real WhatsApp (ITV service line)
   EMAIL:"itv.service.cb@gmail.com",  // real contact email
+  ANALYTICS_CONSENT:true,           // master switch: false = never load trackers even with consent
   GA4_ID:"",                        // TODO: "G-XXXXXXXXXX"
   GTM_ID:"",                        // TODO: "GTM-XXXXXXX"
   META_PIXEL_ID:"",                 // TODO: "0000000000000000"
@@ -641,7 +781,9 @@ const VEHICLES=[
 
 /* ---------- i18n ---------- */
 const I18N={
- es:{logo_sub:"Importación llave en mano",nav_how:"Cómo funciona",nav_origen:"Origen",nav_stock:"Vehículos",nav_calc:"Calculadora",nav_itv:"ITV",nav_faq:"FAQ",
+ es:{seo_title:"ITV Costa Blanca — Importación de vehículos llave en mano | Alemania · Mundo · Subastas",seo_desc:"Importamos tu coche, moto o lancha desde Alemania, el mercado mundial o subastas internacionales (Copart, IAAI, Manheim). Aduanas, ITV, matriculación y entrega en Costa Blanca. Sin estrés, sin papeleo.",
+  hero_img_alt:"Coche alemán premium importado en la carretera costera de Costa Blanca",
+  logo_sub:"Importación llave en mano",nav_how:"Cómo funciona",nav_origen:"Origen",nav_stock:"Vehículos",nav_calc:"Calculadora",nav_itv:"ITV",nav_faq:"FAQ",
   hero_badge:"Alemania · Mercado mundial · Subastas internacionales",hero_h1a:"Tu coche.",hero_h1b:"De Alemania, del mundo o de subasta.",hero_h1c:"Matriculado en Costa Blanca.",
   hero_sub:"Lo buscamos, lo traemos, pasamos la ITV y te lo entregamos en tu puerta. Sin estrés, sin papeleo.",hero_cta1:"Calcula tu importación llave en mano →",hero_cta2:"Ver vehículos",
   stat1:"Canales de origen",stat2:"Posible vía subasta",stat3:"Llave en mano",stat4:"Atención en tu idioma",trust_n:"200+ vehículos matriculados",trust_itv:"Garantía de ITV",hero_v_tag:"Recién llegado · En camino a Dénia",hero_v_meta:"Importado de Múnich · Matriculado en España",
@@ -659,7 +801,7 @@ const I18N={
   cal_out_l:"Desglose orientativo",cal_total_l:"Total llave en mano estimado",cal_total_s:"Incluye nuestra comisión. IVA e impuestos según canal.",
   tr_eye:"Confianza",tr_h2:"Trabajamos con los mejores",tr_deal:"Concesionarios partner en Alemania",tr_auc:"Plataformas de subasta",tr_trans:"Partners de transporte",tr_cont:"Líneas de contenedor",
   tr_b1:"Sociedad registrada en España",tr_b2:"Verificación de historial",tr_b3:"Gestión completa del trámite",tr_b4:"Asistencia con documentación",
-  ab_eye:"Quiénes somos",ab_h2:"Caras visibles, no un formulario",ab_p1:"Somos un equipo afincado en la Costa Blanca que une la precisión alemana con el trato cercano del Mediterráneo. Llevamos años importando, matriculando y entregando vehículos sin que el cliente tenga que pisar una oficina.",ab_p2:"Hablamos tu idioma —español, inglés y ruso— y respondemos como lo haría un amigo que entiende de coches y de burocracia española.",ab_ph:"Foto del equipo · placeholder",
+  ab_eye:"Quiénes somos",ab_h2:"Caras visibles, no un formulario",ab_p1:"Somos un equipo afincado en la Costa Blanca que une la precisión alemana con el trato cercano del Mediterráneo. Llevamos años importando, matriculando y entregando vehículos sin que el cliente tenga que pisar una oficina.",ab_p2:"Hablamos tu idioma —español, inglés y ruso— y respondemos como lo haría un amigo que entiende de coches y de burocracia española.",ab_ph:"El equipo de ITV Costa Blanca",
   fq_eye:"Dudas frecuentes",fq_h2:"Preguntas frecuentes",
   ct_eye:"Hablemos",ct_h2:"Tu próximo vehículo está a un mensaje",ct_p:"Cuéntanos qué buscas y te preparamos un presupuesto llave en mano sin compromiso.",ct_wa:"💬 Escríbenos por WhatsApp",ct_calc:"Calcular importación",
   ft_about:"Importación llave en mano de coches, motos y náutica. De Alemania, el mundo o subasta — matriculado en España.",ft_serv:"Servicios",ft_s1:"Búsqueda y origen",ft_s2:"Transporte",ft_s3:"ITV & matriculación",ft_s4:"Compra en subasta",
@@ -667,7 +809,9 @@ const I18N={
   ck_text:"Usamos cookies propias y de terceros para analítica y mejorar tu experiencia. Puedes aceptar todas o solo las necesarias.",ck_more:"Más información",ck_accept:"Aceptar todas",ck_reject:"Solo necesarias",
   itv_tag:"★ Servicio aparte",itv_h:"ITV «Done For You» — sin mover el coche",itv_p:"¿Solo necesitas pasar la ITV? Recogemos tu coche, hacemos el pre-check, gestionamos la inspección de principio a fin y te lo devolvemos. Atención en tu idioma.",itv_cta:"Ver servicio ITV →",itv_cta2:"💬 Solicitar ITV",itv_lab:"Precio único",itv_iva:"IVA incluido · 1 re-test incl."},
 
- en:{logo_sub:"Turn-key import",nav_how:"How it works",nav_origen:"Sourcing",nav_stock:"Vehicles",nav_calc:"Calculator",nav_itv:"ITV",nav_faq:"FAQ",
+ en:{seo_title:"ITV Costa Blanca — Turn-key vehicle import | Germany · World · Auctions",seo_desc:"We import your car, motorbike or boat from Germany, the worldwide market or international auctions (Copart, IAAI, Manheim). Customs, ITV, registration and delivery in Costa Blanca. Zero stress, zero paperwork.",
+  hero_img_alt:"Premium German car imported on the Costa Blanca coastal road",
+  logo_sub:"Turn-key import",nav_how:"How it works",nav_origen:"Sourcing",nav_stock:"Vehicles",nav_calc:"Calculator",nav_itv:"ITV",nav_faq:"FAQ",
   hero_badge:"Germany · Worldwide market · International auctions",hero_h1a:"Your car.",hero_h1b:"From Germany, worldwide, or auction.",hero_h1c:"Registered in Spain.",
   hero_sub:"We source it, ship it, pass the ITV and deliver it to your door. Zero stress, zero paperwork.",hero_cta1:"Get your turn-key quote →",hero_cta2:"Browse vehicles",
   stat1:"Sourcing channels",stat2:"Possible via auction",stat3:"Turn-key",stat4:"Service in your language",trust_n:"200+ vehicles registered",trust_itv:"ITV pass guaranteed",hero_v_tag:"Just arrived · En route to Dénia",hero_v_meta:"Imported from Munich · Registered in Spain",
@@ -685,7 +829,7 @@ const I18N={
   cal_out_l:"Indicative breakdown",cal_total_l:"Estimated turn-key total",cal_total_s:"Includes our fee. VAT and duties by channel.",
   tr_eye:"Trust",tr_h2:"We work with the best",tr_deal:"Partner dealers in Germany",tr_auc:"Auction platforms",tr_trans:"Transport partners",tr_cont:"Container lines",
   tr_b1:"Company registered in Spain",tr_b2:"History verification",tr_b3:"Full ITV handling",tr_b4:"Documentation assistance",
-  ab_eye:"About us",ab_h2:"Real faces, not a form",ab_p1:"We are a Costa Blanca–based team blending German precision with Mediterranean warmth. We've spent years importing, registering and delivering vehicles without the client setting foot in an office.",ab_p2:"We speak your language — Spanish, English and Russian — and reply like a friend who knows cars and Spanish bureaucracy.",ab_ph:"Team photo · placeholder",
+  ab_eye:"About us",ab_h2:"Real faces, not a form",ab_p1:"We are a Costa Blanca–based team blending German precision with Mediterranean warmth. We've spent years importing, registering and delivering vehicles without the client setting foot in an office.",ab_p2:"We speak your language — Spanish, English and Russian — and reply like a friend who knows cars and Spanish bureaucracy.",ab_ph:"The ITV Costa Blanca team",
   fq_eye:"Common questions",fq_h2:"Frequently asked questions",
   ct_eye:"Let's talk",ct_h2:"Your next vehicle is one message away",ct_p:"Tell us what you're after and we'll prepare a no-obligation turn-key quote.",ct_wa:"💬 Message us on WhatsApp",ct_calc:"Calculate import",
   ft_about:"Turn-key import of cars, motorbikes and marine craft. From Germany, the world or auction — registered in Spain.",ft_serv:"Services",ft_s1:"Sourcing",ft_s2:"Transport",ft_s3:"ITV & registration",ft_s4:"Auction buying",
@@ -693,7 +837,9 @@ const I18N={
   ck_text:"We use first- and third-party cookies for analytics and to improve your experience. You can accept all or only the necessary ones.",ck_more:"Learn more",ck_accept:"Accept all",ck_reject:"Necessary only",
   itv_tag:"★ Standalone service",itv_h:"ITV “Done For You” — without moving your car",itv_p:"Just need to pass the ITV? We collect your car, run the pre-check, handle the inspection start to finish and return it. Service in your language.",itv_cta:"See ITV service →",itv_cta2:"💬 Request ITV",itv_lab:"One price",itv_iva:"IVA included · 1 re-test incl."},
 
- ru:{logo_sub:"Импорт под ключ",nav_how:"Как это работает",nav_origen:"Откуда",nav_stock:"Авто",nav_calc:"Калькулятор",nav_itv:"ITV",nav_faq:"FAQ",
+ ru:{seo_title:"ITV Costa Blanca — Импорт авто под ключ | Германия · Мир · Аукционы",seo_desc:"Импортируем твой авто, мото или катер из Германии, с мирового рынка или международных аукционов (Copart, IAAI, Manheim). Растаможка, ITV, оформление и доставка на Коста-Бланке. Без стресса и бумаг.",
+  hero_img_alt:"Премиальное немецкое авто, привезённое на прибрежной дороге Коста-Бланки",
+  logo_sub:"Импорт под ключ",nav_how:"Как это работает",nav_origen:"Откуда",nav_stock:"Авто",nav_calc:"Калькулятор",nav_itv:"ITV",nav_faq:"FAQ",
   hero_badge:"Германия · Мировой рынок · Международные аукционы",hero_h1a:"Твоя машина.",hero_h1b:"Из Германии, со всего мира или с аукциона.",hero_h1c:"С испанскими номерами.",
   hero_sub:"Найдём, привезём, пройдём ITV и доставим к двери. Без стресса и бумажной волокиты.",hero_cta1:"Рассчитать импорт под ключ →",hero_cta2:"Смотреть авто",
   stat1:"Канала поставки",stat2:"Возможно через аукцион",stat3:"Под ключ",stat4:"Поддержка на вашем языке",trust_n:"200+ авто оформлено",trust_itv:"Гарантия прохождения ITV",hero_v_tag:"Только прибыл · В пути в Дению",hero_v_meta:"Привезён из Мюнхена · Оформлен в Испании",
@@ -711,7 +857,7 @@ const I18N={
   cal_out_l:"Ориентировочная разбивка",cal_total_l:"Итого под ключ (оценка)",cal_total_s:"Включает нашу комиссию. НДС и пошлины зависят от канала.",
   tr_eye:"Доверие",tr_h2:"Работаем с лучшими",tr_deal:"Дилеры-партнёры в Германии",tr_auc:"Аукционные площадки",tr_trans:"Транспортные партнёры",tr_cont:"Контейнерные линии",
   tr_b1:"Компания зарегистрирована в Испании",tr_b2:"Проверка истории",tr_b3:"Полное ведение ITV",tr_b4:"Помощь с документами",
-  ab_eye:"О нас",ab_h2:"Живые люди, а не форма",ab_p1:"Мы — команда на Коста-Бланке, соединяющая немецкую точность со средиземноморским теплом. Годами импортируем, оформляем и доставляем транспорт так, что клиенту не нужно заходить ни в один офис.",ab_p2:"Говорим на твоём языке — испанский, английский и русский — и отвечаем как друг, который разбирается в машинах и в испанской бюрократии.",ab_ph:"Фото команды · placeholder",
+  ab_eye:"О нас",ab_h2:"Живые люди, а не форма",ab_p1:"Мы — команда на Коста-Бланке, соединяющая немецкую точность со средиземноморским теплом. Годами импортируем, оформляем и доставляем транспорт так, что клиенту не нужно заходить ни в один офис.",ab_p2:"Говорим на твоём языке — испанский, английский и русский — и отвечаем как друг, который разбирается в машинах и в испанской бюрократии.",ab_ph:"Команда ITV Costa Blanca",
   fq_eye:"Частые вопросы",fq_h2:"Часто задаваемые вопросы",
   ct_eye:"Давай обсудим",ct_h2:"Твоя следующая машина — в одном сообщении",ct_p:"Расскажи, что ищешь, и мы подготовим расчёт под ключ без обязательств.",ct_wa:"💬 Написать в WhatsApp",ct_calc:"Рассчитать импорт",
   ft_about:"Импорт под ключ авто, мото и водного транспорта. Из Германии, со всего мира или с аукциона — с оформлением в Испании.",ft_serv:"Услуги",ft_s1:"Поиск и origin",ft_s2:"Транспорт",ft_s3:"ITV и оформление",ft_s4:"Покупка с аукциона",
@@ -772,13 +918,16 @@ function fmt(n){return "€"+Math.round(n).toLocaleString("de-DE");}
 
 function renderCards(filter="all"){
   const c=$("#cards");c.innerHTML="";
-  VEHICLES.filter(v=>filter==="all"||v.type===filter||(filter==="auction"&&v.src==="auction")).forEach(v=>{
+  const carImgs=["assets/img/car-1.jpg","assets/img/car-2.jpg","assets/img/car-3.jpg"];
+  VEHICLES.filter(v=>filter==="all"||v.type===filter||(filter==="auction"&&v.src==="auction")).forEach((v,i)=>{
     const t=I18N[LANG];
     const statTxt={avail:{es:"Disponible",en:"Available",ru:"В наличии"},transit:{es:"En camino",en:"On the way",ru:"В пути"},resv:{es:"Reservado",en:"Reserved",ru:"Резерв"}}[v.stat][LANG];
     const srcTxt={DE:"🇩🇪 Alemania",world:"🌍 "+({es:"Mundo",en:"World",ru:"Мир"}[LANG]),auction:"🔨 "+({es:"Subasta",en:"Auction",ru:"Аукцион"}[LANG])}[v.src];
+    const img=carImgs[i%carImgs.length];
+    const altTxt=({es:"Vehículo importado",en:"Imported vehicle",ru:"Импортированный автомобиль"}[LANG])+" — "+v.m;
     c.insertAdjacentHTML("beforeend",`
      <div class="vcard reveal in">
-       <div class="img"><span class="src">${srcTxt}</span><span class="stat ${v.stat}">${statTxt}</span><span class="ph2">FOTO · placeholder</span></div>
+       <div class="img"><img src="${img}" alt="${altTxt}" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><span class="src">${srcTxt}</span><span class="stat ${v.stat}">${statTxt}</span></div>
        <div class="info"><h3>${v.m}</h3><div class="meta">${v.y} · ${v.km}</div>
          <div class="price"><div><div class="llave">${t.cal_total_l.split("(")[0]}</div><div class="p">${fmt(v.price)}</div></div><div class="lk">›</div></div></div>
      </div>`);
@@ -812,6 +961,23 @@ function bindAcc(scope){
   });
 }
 
+/* ---------- CALCULATOR RATES ----------
+   PLACEHOLDER market rates — easy to swap when real quotes land.
+   All figures are orientative defaults, NOT contractual.            */
+const RATES={
+  transportBase:{car:1200,moto:600,water:1800}, // EUR, road transport DE->ES baseline by type
+  worldTransportMult:1.8,   // world (overseas) transport ≈ 1.8× the DE baseline
+  aucTransportMult:1.7,     // USA auction transport ≈ 1.7× the DE baseline
+  container:1400,           // EUR, ocean container slot (auction)
+  customsDuty:0.10,         // 10% import customs duty (non-EU origin: world/auction)
+  iva:0.21,                 // 21% Spanish IVA
+  itvDe:900, itvWorld:950, itvAuction:950, // ITV + matriculación fees by channel
+  buyerFeePct:0.10, buyerFeeMin:600,       // auction buyer fee
+  commission:{ // our commission: pct of price, with a floor (min) per channel
+    de:{pct:0.06,min:900}, world:{pct:0.07,min:1100}, auction:{pct:0.08,min:1300}
+  }
+};
+
 /* calculator */
 function calc(){
   const price=+$("#cPrice").value||0;
@@ -824,32 +990,35 @@ function calc(){
     en:{veh:"Vehicle",fee:"Auction buyer fee",tr_eu:"Transport DE → ES",tr_us:"Transport USA → ES",cont:"Container",duty:"Customs duty (10%)",iva:"VAT (21%)",mat:"ITV + registration",rest:"Restoration",com:"Our fee"},
     ru:{veh:"Транспорт",fee:"Buyer fee аукциона",tr_eu:"Доставка DE → ES",tr_us:"Доставка США → ES",cont:"Контейнер",duty:"Пошлина (10%)",iva:"НДС (21%)",mat:"ITV + оформление",rest:"Восстановление",com:"Наша комиссия"}
   }[LANG];
-  const trBase={car:1200,moto:600,water:1800}[type];
+  const trBase=RATES.transportBase[type];
   let rows=[],total=0;
   const add=(k,v,muted)=>{rows.push([k,v,muted]);if(!muted)total+=v;};
   if(SRC==="de"){
+    // Germany: price + road transport + ITV/matriculación + commission (intra-EU, no extra duty/IVA)
     add(L.veh,price);
     add(L.tr_eu,trBase);
-    add(L.mat,900);
-    add(L.com,Math.max(900,price*0.06));
+    add(L.mat,RATES.itvDe);
+    add(L.com,Math.max(RATES.commission.de.min,price*RATES.commission.de.pct));
   }else if(SRC==="world"){
+    // World (overseas): price + transport + customs duty + IVA + ITV/matriculación + commission
     add(L.veh,price);
-    add(L.tr_us,trBase*1.8);
-    add(L.duty,price*0.10);
-    add(L.iva,(price+price*0.10)*0.21);
-    add(L.mat,950);
-    add(L.com,Math.max(1100,price*0.07));
+    add(L.tr_us,trBase*RATES.worldTransportMult);
+    add(L.duty,price*RATES.customsDuty);
+    add(L.iva,(price+price*RATES.customsDuty)*RATES.iva);
+    add(L.mat,RATES.itvWorld);
+    add(L.com,Math.max(RATES.commission.world.min,price*RATES.commission.world.pct));
   }else{ // auction USA
-    const fee=Math.max(600,price*0.10);
+    // Auction: lot price + buyer fee + US->ES transport + container + customs duty 10% + IVA 21% + restoration + commission
+    const fee=Math.max(RATES.buyerFeeMin,price*RATES.buyerFeePct);
     add(L.veh,price);
     add(L.fee,fee);
-    add(L.tr_us,trBase*1.7);
-    add(L.cont,1400);
-    add(L.duty,price*0.10);
-    add(L.iva,(price+fee+price*0.10)*0.21);
+    add(L.tr_us,trBase*RATES.aucTransportMult);
+    add(L.cont,RATES.container);
+    add(L.duty,price*RATES.customsDuty);
+    add(L.iva,(price+fee+price*RATES.customsDuty)*RATES.iva);
     if(restore>0)add(L.rest,restore);
-    add(L.mat,950);
-    add(L.com,Math.max(1300,price*0.08));
+    add(L.mat,RATES.itvAuction);
+    add(L.com,Math.max(RATES.commission.auction.min,price*RATES.commission.auction.pct));
   }
   rows.forEach(([k,v,muted])=>bd.insertAdjacentHTML("beforeend",`<div class="brow ${muted?'muted':''}"><span>${k}</span><span>${fmt(v)}</span></div>`));
   $("#cTotal").textContent=fmt(total);
@@ -860,11 +1029,18 @@ function calc(){
 /* language */
 function setLang(l){
   LANG=l;document.documentElement.lang=l;
-  $$("[data-i18n]").forEach(el=>{const k=el.getAttribute("data-i18n");if(I18N[l][k]!=null)el.textContent=I18N[l][k];});
+  const dict=I18N[l]||I18N.es;
+  $$("[data-i18n]").forEach(el=>{const k=el.getAttribute("data-i18n");if(dict[k]!=null)el.textContent=dict[k];});
+  $$("[data-i18n-alt]").forEach(el=>{const k=el.getAttribute("data-i18n-alt");if(dict[k]!=null)el.setAttribute("alt",dict[k]);});
+  $$("[data-i18n-aria]").forEach(el=>{const k=el.getAttribute("data-i18n-aria");if(dict[k]!=null)el.setAttribute("aria-label",dict[k]);});
+  // swap document.title + meta description (SEO i18n)
+  if(dict.seo_title)document.title=dict.seo_title;
+  if(dict.seo_desc){const md=document.querySelector('meta[name="description"]');if(md)md.setAttribute("content",dict.seo_desc);}
   $$(".lang button").forEach(b=>b.classList.toggle("active",b.dataset.lang===l));
   // refresh dynamic blocks
   const af=$("#filters .active")?.dataset.f||"all";
   renderCards(af);renderServices();renderFaq();calc();
+  applyWhatsApp();
 }
 
 /* ---------- CONSENT + ANALYTICS ---------- */
@@ -872,6 +1048,7 @@ function getCookie(n){return document.cookie.split("; ").find(r=>r.startsWith(n+
 function setCookie(n,v,days){const d=new Date();d.setTime(d.getTime()+days*864e5);document.cookie=n+"="+v+";expires="+d.toUTCString()+";path=/;SameSite=Lax";}
 
 function loadAnalytics(){
+  if(!CONFIG.ANALYTICS_CONSENT)return;            // master kill-switch
   if(window.__analyticsLoaded)return;window.__analyticsLoaded=true;
   // Google Tag Manager
   if(CONFIG.GTM_ID){
@@ -894,6 +1071,59 @@ function loadAnalytics(){
     (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script",CONFIG.CLARITY_ID);
   }
 }
+/* unified event dispatcher — pushes to every loaded sink, no-ops if none */
+function track(name,params){
+  params=params||{};
+  try{
+    if(window.dataLayer)window.dataLayer.push(Object.assign({event:name},params));
+    if(typeof gtag==="function")gtag("event",name,params);
+    if(typeof fbq==="function")fbq("trackCustom",name,params);
+    if(typeof clarity==="function")clarity("event",name);
+  }catch(e){/* analytics must never break UX */}
+}
+
+/* one delegated listener for all conversion events */
+let __calcTimer=null;
+function wireAnalytics(){
+  document.addEventListener("click",e=>{
+    const a=e.target.closest("a,button");
+    if(!a)return;
+    // hero gold CTA
+    if(a.matches('.hero-cta .btn-gold'))track("cta_click",{location:"hero"});
+    // any WhatsApp link
+    if(a.matches('a[href*="wa.me"], a.fab, a.btn-wa'))track("whatsapp_click",{href:a.href});
+    // inventory filter
+    if(a.closest("#filters"))track("inventory_filter",{filter:a.dataset.f||""});
+    // vehicle card
+    if(a.closest(".vcard"))track("vehicle_click");
+    // calculator source change
+    if(a.closest("#srcSwitch"))track("calc_source_change",{source:a.dataset.src||""});
+    // contact mailto / tel
+    const href=a.getAttribute&&a.getAttribute("href")||"";
+    if(/^mailto:|^tel:/.test(href))track("contact_click",{type:href.split(":")[0]});
+    // faq open (only when opening)
+    if(a.closest("#faqAcc")&&a.classList.contains("q")&&!a.parentElement.classList.contains("open"))track("faq_open");
+  },true);
+  // calc_result — debounced 800ms after inputs change, once a total exists
+  ["cPrice","cType","cRestore"].forEach(id=>{
+    const el=$("#"+id);if(!el)return;
+    el.addEventListener("input",()=>{
+      clearTimeout(__calcTimer);
+      __calcTimer=setTimeout(()=>{
+        const tot=$("#cTotal").textContent;
+        if(tot&&tot!=="—")track("calc_result",{source:SRC,total:tot});
+      },800);
+    });
+  });
+  // scroll_depth 50 / 90 via sentinels
+  const sd={};["50","90"].forEach(p=>sd[p]=false);
+  const mk=(pct)=>{const d=document.createElement("div");d.style.cssText="position:absolute;left:0;width:1px;height:1px;top:"+pct+"%";d.setAttribute("aria-hidden","true");document.body.appendChild(d);return d;};
+  const io=new IntersectionObserver(es=>es.forEach(en=>{
+    if(en.isIntersecting){const p=en.target.dataset.depth;if(!sd[p]){sd[p]=true;track("scroll_depth",{percent:+p});}}
+  }),{threshold:0});
+  [["50"],["90"]].forEach(([p])=>{const d=mk(p);d.dataset.depth=p;io.observe(d);});
+}
+
 function initConsent(){
   const c=getCookie("itv_consent");
   if(c==="all"){loadAnalytics();return;}
@@ -903,14 +1133,15 @@ function initConsent(){
   document.getElementById("ckReject").onclick=()=>{setCookie("itv_consent","min",180);box.classList.remove("show");};
 }
 function applyWhatsApp(){
-  document.querySelectorAll('a[href*="wa.me"]').forEach(a=>{
-    a.href="https://wa.me/"+CONFIG.WHATSAPP+"?text=Hola,%20quiero%20importar%20";
-  });
+  // BUG FIX (seo memo C1): build every WhatsApp href from CONFIG.WHATSAPP at runtime.
+  const msg={es:"Hola, quiero importar un vehículo",en:"Hello, I'd like to import a vehicle",ru:"Здравствуйте, хочу импортировать авто"}[LANG]||"Hola, quiero importar un vehículo";
+  const href="https://wa.me/"+CONFIG.WHATSAPP+"?text="+encodeURIComponent(msg);
+  document.querySelectorAll('a[href*="wa.me"], a.fab, a.btn-wa').forEach(a=>{a.href=href;});
 }
 
 /* ---------- INIT ---------- */
 document.addEventListener("DOMContentLoaded",()=>{
-  applyWhatsApp();initConsent();
+  applyWhatsApp();initConsent();wireAnalytics();
   // nav scroll
   const hdr=$("#hdr");
   addEventListener("scroll",()=>hdr.classList.toggle("scrolled",scrollY>40));

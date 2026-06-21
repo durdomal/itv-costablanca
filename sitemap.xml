@@ -7,17 +7,18 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://itv-costablanca.es/?lang=en"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://itv-costablanca.es/?lang=ru"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://itv-costablanca.es/"/>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://itv-costablanca.es/itv-service.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://itv-costablanca.es/itv-service.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://itv-costablanca.es/itv-service.html?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://itv-costablanca.es/itv-service.html?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://itv-costablanca.es/itv-service.html"/>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://itv-costablanca.es/legal.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
   </url>
 </urlset>
