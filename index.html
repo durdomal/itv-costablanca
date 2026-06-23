@@ -308,6 +308,9 @@
   .logos{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
   .logo-chip{font-family:var(--font-head);font-weight:700;font-size:16px;color:var(--navy);background:var(--cream);border:1px solid var(--line);padding:13px 22px;border-radius:12px;letter-spacing:-.01em;opacity:.85;transition:.2s}
   .logo-chip:hover{opacity:1;border-color:var(--gold);transform:translateY(-2px)}
+  .trust-logos{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:28px 46px;margin:0 auto 40px;padding-bottom:36px;border-bottom:1px solid var(--line);max-width:760px}
+  .trust-logos img{height:28px;width:auto;filter:brightness(0);opacity:.5;transition:.25s}
+  .trust-logos img:hover{filter:none;opacity:1}
   .badges{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:50px;max-width:860px;margin-left:auto;margin-right:auto}
   .badge{text-align:center;padding:22px 14px;border:1px solid var(--line);border-radius:14px}
   .badge .b-n{font-family:var(--font-head);font-size:28px;font-weight:800;color:var(--gold-text)}
@@ -316,7 +319,7 @@
   /* ABOUT */
   #about{background:var(--navy);color:var(--cream)}
   #about .eyebrow{color:var(--gold)}
-  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+  .about-grid{max-width:840px;margin:0 auto}
   #about h2{font-size:clamp(30px,3.6vw,44px);margin-bottom:22px;color:var(--cream)}
   #about p{color:rgba(250,247,242,.8);font-size:16.5px;margin-bottom:16px}
   .about-visual{aspect-ratio:1/1;border-radius:24px;background:linear-gradient(135deg,#16344f,#091d31);border:1px solid rgba(232,218,192,.14);display:grid;place-items:center;color:rgba(232,218,192,.4);font-size:12px;letter-spacing:.16em;text-transform:uppercase}
@@ -700,10 +703,16 @@
       <div class="eyebrow" data-i18n="tr_eye">Confianza</div>
       <h2 data-i18n="tr_h2">Trabajamos con los mejores</h2>
     </div>
+    <!-- real platform logos (pulled from Wikimedia) -->
+    <div class="trust-logos reveal">
+      <img src="assets/img/logos/mobile-de.svg" alt="mobile.de" loading="lazy">
+      <img src="assets/img/logos/copart.svg" alt="Copart" loading="lazy">
+      <img src="assets/img/logos/manheim.svg" alt="Manheim" loading="lazy">
+    </div>
     <div class="trust-row reveal"><div class="cap" data-i18n="tr_deal">Concesionarios partner en Alemania</div>
       <div class="logos"><span class="logo-chip">Mitropoulos</span><span class="logo-chip">Maushardt</span><span class="logo-chip">Süverkrüp</span><span class="logo-chip">Göbel</span><span class="logo-chip">S&amp;G</span></div></div>
     <div class="trust-row reveal"><div class="cap" data-i18n="tr_auc">Plataformas de subasta</div>
-      <div class="logos"><span class="logo-chip">Copart</span><span class="logo-chip">IAAI</span><span class="logo-chip">Manheim</span><span class="logo-chip">BCA</span><span class="logo-chip">Auto1</span><span class="logo-chip">ADESA</span></div></div>
+      <div class="logos"><span class="logo-chip">IAAI</span><span class="logo-chip">BCA</span><span class="logo-chip">Auto1</span><span class="logo-chip">ADESA</span></div></div>
     <div class="trust-row reveal"><div class="cap" data-i18n="tr_trans">Partners de transporte</div>
       <div class="logos"><span class="logo-chip">Hustrans</span><span class="logo-chip">Clicktrans</span><span class="logo-chip">Matei Unitrans</span><span class="logo-chip" data-i18n="tr_cont">Líneas de contenedor</span></div></div>
     <div class="badges">
@@ -724,7 +733,6 @@
       <p data-i18n="ab_p1">Somos un equipo afincado en la Costa Blanca que une la precisión alemana con el trato cercano del Mediterráneo. Llevamos años importando, matriculando y entregando vehículos sin que el cliente tenga que pisar una oficina.</p>
       <p data-i18n="ab_p2">Hablamos tu idioma —español, inglés y ruso— y respondemos como lo haría un amigo que entiende de coches y de burocracia española.</p>
     </div>
-    <div class="about-visual reveal" role="img" data-i18n-aria="ab_ph" aria-label="El equipo de ITV Costa Blanca"></div>
   </div>
 </section>
 
