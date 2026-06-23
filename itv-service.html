@@ -162,6 +162,15 @@
     .steps,.feat,.twocol{grid-template-columns:1fr}
     .nav .back{display:none}
   }
+  /* Cookie consent */
+  .cookie{position:fixed;left:18px;right:18px;bottom:18px;z-index:120;max-width:520px;background:var(--navy);color:var(--cream);border:1px solid rgba(232,218,192,.18);border-radius:16px;padding:20px 22px;box-shadow:0 24px 60px -20px rgba(0,0,0,.6);display:none}
+  .cookie.show{display:block;animation:cu .4s ease}
+  @keyframes cu{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  .cookie p{font-size:13.5px;color:rgba(250,247,242,.82);margin-bottom:14px}
+  .cookie .row{display:flex;gap:10px;flex-wrap:wrap}
+  .cookie .btn{padding:11px 20px;font-size:14px}
+  .cookie .btn-min{background:transparent;color:var(--cream);border:1px solid rgba(232,218,192,.3)}
+  .cookie .btn-min:hover{background:rgba(232,218,192,.08)}
 </style>
 </head>
 <body>
@@ -301,8 +310,17 @@
 
 <a class="fab wa" href="#" aria-label="WhatsApp">💬</a>
 
+<div class="cookie" id="cookie">
+  <p data-i18n="ck_text">We use first- and third-party cookies for analytics and to improve your experience. You can accept all or only the necessary ones.</p>
+  <div class="row">
+    <button class="btn btn-gold" id="ckAccept" data-i18n="ck_accept">Accept all</button>
+    <button class="btn btn-min" id="ckReject" data-i18n="ck_reject">Necessary only</button>
+  </div>
+</div>
+
 <script>
 const WHATSAPP="34644324195";
+const CONFIG={ANALYTICS_CONSENT:true,GA4_ID:"G-7MRGGYC4RS",GTM_ID:"",META_PIXEL_ID:"",CLARITY_ID:"xbgfw2askp"};
 const I18N={
  en:{seo_title:"ITV Done For You — Costa Blanca | Managed ITV from €100",seo_desc:"Stress-free ITV on Costa Blanca. We collect your car, run a pre-ITV check, handle the inspection start to finish and return it. One re-test included. English-speaking. €100, IVA included.",
   nav_back:"← Vehicle import",tagline:"🚗 Costa Blanca · English-speaking service",h1:"ITV Done For You",sub:"We collect your car, run a full pre-ITV check, handle the inspection from start to finish and return it. You don't deal with Spanish, queues or uncertainty.",
@@ -315,7 +333,8 @@ const I18N={
   ic_h:"Important clarifications",ic1:"Pre-ITV check is not a full mechanical diagnosis",ic2:"Passing ITV is not guaranteed",ic3:"Repairs, parts and fuel are not included",ic4:"Driving distance may vary by station availability",
   ar_eye:"Service area",ar_h:"Across Costa Blanca",ar_p:"Not sure about your location? Just ask.",
   cta_eye:"Stop worrying about ITV",cta_h:"Send a message — we'll take care of the rest",cta_p:"One price, IVA included. We collect, inspect and return. €100.",cta_wa2:"💬 Request ITV Service",cta_mail:"✉️ Email us",
-  foot_disc:"Private ITV assistance service on Costa Blanca. Not affiliated with official ITV stations.",foot_back:"Vehicle import & sales"},
+  foot_disc:"Private ITV assistance service on Costa Blanca. Not affiliated with official ITV stations.",foot_back:"Vehicle import & sales",
+  ck_text:"We use first- and third-party cookies for analytics and to improve your experience. You can accept all or only the necessary ones.",ck_accept:"Accept all",ck_reject:"Necessary only"},
 
  es:{seo_title:"ITV Done For You — Costa Blanca | ITV gestionada desde €100",seo_desc:"ITV sin estrés en la Costa Blanca. Recogemos tu coche, hacemos el pre-check, gestionamos la inspección de principio a fin y te lo devolvemos. Una re-inspección incluida. €100, IVA incluido.",
   nav_back:"← Importación de vehículos",tagline:"🚗 Costa Blanca · Atención en tu idioma",h1:"ITV Done For You",sub:"Recogemos tu coche, hacemos un pre-check completo, gestionamos la ITV de principio a fin y te lo devolvemos. Sin lidiar con el español, las colas ni la incertidumbre.",
@@ -328,7 +347,8 @@ const I18N={
   ic_h:"Aclaraciones importantes",ic1:"El pre-check no es un diagnóstico mecánico completo",ic2:"No se garantiza pasar la ITV",ic3:"Reparaciones, piezas y combustible no incluidos",ic4:"La distancia puede variar según la estación disponible",
   ar_eye:"Zona de servicio",ar_h:"En toda la Costa Blanca",ar_p:"¿Dudas con tu zona? Solo pregúntanos.",
   cta_eye:"Deja de preocuparte por la ITV",cta_h:"Escríbenos — nosotros nos encargamos del resto",cta_p:"Un precio, IVA incluido. Recogemos, inspeccionamos y devolvemos. €100.",cta_wa2:"💬 Solicitar servicio ITV",cta_mail:"✉️ Escríbenos un email",
-  foot_disc:"Servicio privado de asistencia ITV en la Costa Blanca. No afiliado a estaciones ITV oficiales.",foot_back:"Importación y venta de vehículos"},
+  foot_disc:"Servicio privado de asistencia ITV en la Costa Blanca. No afiliado a estaciones ITV oficiales.",foot_back:"Importación y venta de vehículos",
+  ck_text:"Usamos cookies propias y de terceros para analítica y mejorar tu experiencia. Puedes aceptar todas o solo las necesarias.",ck_accept:"Aceptar todas",ck_reject:"Solo necesarias"},
 
  ru:{seo_title:"ITV Done For You — Коста-Бланка | ITV под ключ от €100",seo_desc:"ITV без стресса на Коста-Бланке. Забираем машину, делаем предпроверку, ведём осмотр от начала до конца и возвращаем. Одна пересдача включена. €100, IVA включён.",
   nav_back:"← Импорт авто",tagline:"🚗 Коста-Бланка · Поддержка на твоём языке",h1:"ITV Done For You",sub:"Забираем твою машину, делаем полную предпроверку, ведём техосмотр (ITV) от начала до конца и возвращаем. Без испанского, без очередей, без неопределённости.",
@@ -341,7 +361,8 @@ const I18N={
   ic_h:"Важные уточнения",ic1:"Предпроверка — не полная механическая диагностика",ic2:"Прохождение ITV не гарантируется",ic3:"Ремонт, запчасти и топливо не входят",ic4:"Расстояние может меняться в зависимости от станции",
   ar_eye:"Зона обслуживания",ar_h:"По всей Коста-Бланке",ar_p:"Не уверен по своей зоне? Просто спроси.",
   cta_eye:"Хватит переживать из-за ITV",cta_h:"Напиши — остальное берём на себя",cta_p:"Одна цена, IVA включён. Забираем, проходим, возвращаем. €100.",cta_wa2:"💬 Заказать услугу ITV",cta_mail:"✉️ Написать на email",
-  foot_disc:"Частный сервис помощи с ITV на Коста-Бланке. Не аффилирован с официальными станциями ITV.",foot_back:"Импорт и продажа авто"}
+  foot_disc:"Частный сервис помощи с ITV на Коста-Бланке. Не аффилирован с официальными станциями ITV.",foot_back:"Импорт и продажа авто",
+  ck_text:"Мы используем собственные и сторонние cookie для аналитики и улучшения работы сайта. Можно принять все или только необходимые.",ck_accept:"Принять все",ck_reject:"Только необходимые"}
 };
 
 const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
@@ -361,6 +382,28 @@ function setLang(l){
 }
 /* lightweight event dispatcher (no trackers loaded here; safe no-op until present) */
 function track(name,params){params=params||{};try{if(window.dataLayer)window.dataLayer.push(Object.assign({event:name},params));if(typeof gtag==="function")gtag("event",name,params);if(typeof fbq==="function")fbq("trackCustom",name,params);}catch(e){}}
+/* ---------- CONSENT + ANALYTICS (shared cookie itv_consent with the homepage) ---------- */
+function getCookie(n){return document.cookie.split("; ").find(r=>r.startsWith(n+"="))?.split("=")[1];}
+function setCookie(n,v,days){const d=new Date();d.setTime(d.getTime()+days*864e5);document.cookie=n+"="+v+";expires="+d.toUTCString()+";path=/;SameSite=Lax";}
+function loadAnalytics(){
+  if(!CONFIG.ANALYTICS_CONSENT)return;
+  if(window.__analyticsLoaded)return;window.__analyticsLoaded=true;
+  if(CONFIG.GA4_ID){
+    const s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+CONFIG.GA4_ID;document.head.appendChild(s);
+    window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config',CONFIG.GA4_ID);
+  }
+  if(CONFIG.CLARITY_ID){
+    (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script",CONFIG.CLARITY_ID);
+  }
+}
+function initConsent(){
+  const c=getCookie("itv_consent");
+  if(c==="all"){loadAnalytics();return;}
+  if(c==="min")return;
+  const box=document.getElementById("cookie");if(!box)return;box.classList.add("show");
+  document.getElementById("ckAccept").onclick=()=>{setCookie("itv_consent","all",180);loadAnalytics();box.classList.remove("show");};
+  document.getElementById("ckReject").onclick=()=>{setCookie("itv_consent","min",180);box.classList.remove("show");};
+}
 function applyWA(){
   const msg={en:"Hello, I'd like the ITV Done For You service",es:"Hola, quiero el servicio ITV Done For You",ru:"Здравствуйте, хочу услугу ITV Done For You"}[document.documentElement.lang]||"";
   $$("a.wa").forEach(a=>a.href="https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(msg));
@@ -372,6 +415,7 @@ document.addEventListener("DOMContentLoaded",()=>{
   setLang(["en","es","ru"].includes(nav)?nav:"en");applyWA();
   const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}}),{threshold:.12});
   $$(".reveal").forEach(el=>io.observe(el));
+  initConsent();
   // itv_service_cta — any WhatsApp / book / email CTA on this page
   document.addEventListener("click",e=>{
     const a=e.target.closest("a");if(!a)return;
