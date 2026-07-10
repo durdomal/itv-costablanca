@@ -811,7 +811,7 @@ const CONFIG={
    car-1.jpg & car-3.jpg are premium SUVs → SUV models only.
    car-2.jpg is a dark sporty coupé/sportback → coupé/4-door coupé only.
    Each car carries an explicit `img` so the body style always matches the photo. */
-const VEHICLES=[
+let VEHICLES=[
   {m:"Porsche Cayenne S",y:2021,km:"68.000 km",price:64900,type:"car",src:"DE",stat:"avail",img:"assets/img/car-1.jpg"},
   {m:"Audi A7 Sportback 50 TDI",y:2021,km:"55.000 km",price:46900,type:"car",src:"DE",stat:"resv",img:"assets/img/car-2.jpg"},
   {m:"BMW X5 xDrive40d",y:2020,km:"82.000 km",price:52900,type:"car",src:"DE",stat:"transit",img:"assets/img/car-3.jpg"},
@@ -1246,6 +1246,21 @@ function revealAll(){
   const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}}),{threshold:.12});
   $$(".reveal:not(.in)").forEach(el=>io.observe(el));
 }
+</script>
+<script>
+/* live inventory feed (auto-picker → /inventory.json); safe fallback to inline demo */
+(function(){
+  function normCar(c){return {m:c.m||c.title||"",y:c.y||c.year||"",km:c.km||(c.mileage_km?(Number(c.mileage_km).toLocaleString('de-DE')+' km'):""),price:c.price||c.price_landed_eur||0,type:c.type||"car",src:c.src||"DE",stat:c.stat||({Reservado:"resv","En camino":"transit"}[c.badge]||"avail"),img:c.img||(c.photos&&c.photos[0])||""};}
+  fetch('/inventory.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}).then(function(d){
+    if(!d||!Array.isArray(d.cars)||!d.cars.length)return;
+    try{
+      VEHICLES=d.cars.map(normCar).filter(function(v){return v.m;});
+      var b=document.querySelector('#filters button.active');var af=(b&&b.dataset&&b.dataset.f)||'all';
+      if(typeof renderCards==='function')renderCards(af);
+      if(d.updated_at){var h=document.querySelector('#stock .section-head p');if(h){var mins=Math.max(0,Math.round((Date.now()-new Date(d.updated_at))/60000));var txt=mins<60?('hace '+mins+' min'):('hace '+Math.round(mins/60)+' h');h.insertAdjacentHTML('beforeend',' <span class="inv-ts" style="opacity:.6">· Actualizado '+txt+'</span>');}}
+    }catch(e){}
+  }).catch(function(){});
+})();
 </script>
 </body>
 </html>

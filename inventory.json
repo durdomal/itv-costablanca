@@ -1,0 +1,15 @@
+{
+  "updated_at": "2026-07-10T12:45:00Z",
+  "source": "itv-daily-picker seed (mock)",
+  "cars": [
+    {"m":"Porsche Cayenne S","y":2021,"km":"68.000 km","price":64900,"type":"car","src":"DE","stat":"avail","img":"assets/img/car-1.jpg"},
+    {"m":"Audi A7 Sportback 50 TDI","y":2021,"km":"55.000 km","price":46900,"type":"car","src":"DE","stat":"resv","img":"assets/img/car-2.jpg"},
+    {"m":"BMW X5 xDrive40d","y":2020,"km":"82.000 km","price":52900,"type":"car","src":"DE","stat":"transit","img":"assets/img/car-3.jpg"},
+    {"m":"Audi Q5 40 TDI quattro","y":2022,"km":"41.000 km","price":44900,"type":"car","src":"world","stat":"avail","img":"assets/img/car-1.jpg"},
+    {"m":"Mercedes CLS 400 d","y":2019,"km":"38.000 mi","price":41900,"type":"car","src":"auction","stat":"transit","img":"assets/img/car-2.jpg"},
+    {"m":"Mercedes GLC 300 4MATIC","y":2018,"km":"71.000 mi","price":39900,"type":"car","src":"auction","stat":"avail","img":"assets/img/car-3.jpg"},
+    {"m":"BMW R 1250 GS","y":2021,"km":"19.000 km","price":16900,"type":"moto","src":"DE","stat":"avail"},
+    {"m":"Yamaha FX Cruiser HO","y":2022,"km":"45 h","price":14500,"type":"water","src":"world","stat":"avail"},
+    {"m":"Quicksilver 605 Cabin","y":2020,"km":"120 h","price":32900,"type":"water","src":"world","stat":"transit"}
+  ]
+}
