@@ -496,6 +496,21 @@
     .steps{ grid-template-columns:1fr 1fr; gap:22px; }
     .step .line{ display:none; }
   }
+  /* USP «Por qué nosotros» */
+  #por-que{background:var(--cream)}
+  .pq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+  .pq-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px 26px;transition:.2s}
+  .pq-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px -22px rgba(10,37,64,.35)}
+  .pq-card .ico{margin-bottom:16px;width:30px;height:30px}
+  .pq-card h3{font-family:var(--font-head);font-size:20px;color:var(--navy);margin-bottom:8px}
+  .pq-card p{color:var(--muted);font-size:15px;line-height:1.55}
+  @media(max-width:900px){.pq-grid{grid-template-columns:1fr}}
+  /* Nuevo CTA */
+  #contact h2 .accent{color:var(--gold);font-style:italic}
+  .ct-reassure{color:rgba(250,247,242,.7)!important;font-size:14px;margin-top:16px}
+  .ct-row{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin-top:30px;color:rgba(250,247,242,.85);font-size:15px}
+  .ct-row a{color:var(--gold);text-decoration:none}
+  .ct-row a:hover{text-decoration:underline}
 </style>
 </head>
 <body>
@@ -597,6 +612,49 @@
         <div class="top"><span class="pill" data-i18n="org_save">hasta −40%</span><div class="flags"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3l7 7-3 3-7-7z"/><path d="M11 6l-7 7 3 3 7-7"/><line x1="5" y1="21" x2="14" y2="21"/></svg></div><div class="kick" data-i18n="org3_kick">Subastas</div><h3 data-i18n="org3_h">Hasta −40% del mercado</h3></div>
         <div class="body"><p data-i18n="org3_p">Copart, IAAI, Manheim, BCA, Auto1, ADESA. Salvage y clean title, con restauración bajo demanda.</p>
         <ul><li data-i18n="org3_l1">Pujamos en tu nombre</li><li data-i18n="org3_l2">Pre-bid inspection: foto + condition report + VIN</li><li data-i18n="org3_l3">Logística USA / Japón / Dubái en contenedor</li></ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUÉ NOSOTROS -->
+<section id="por-que" class="section">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow" data-i18n="pq_eye">Por qué nosotros</div>
+      <h2 data-i18n="pq_h2">Lo que nos diferencia</h2>
+      <p data-i18n="pq_p">Sin sorpresas, sin papeleo y sin mover el coche. Nos encargamos de todo, de principio a fin.</p>
+    </div>
+    <div class="pq-grid">
+      <div class="pq-card reveal">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9"/><path d="M17 6l2 2"/><path d="M14 9l2 2"/></svg>
+        <h3 data-i18n="pq1_h">Llave en mano</h3>
+        <p data-i18n="pq1_p">Precio final cerrado, sin sorpresas ni costes ocultos.</p>
+      </div>
+      <div class="pq-card reveal">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18"/><path d="M5 7l-3 6h6z"/><path d="M19 7l-3 6h6z"/><path d="M5 7h14"/><path d="M8 21h8"/></svg>
+        <h3 data-i18n="pq2_h">Precios honestos</h3>
+        <p data-i18n="pq2_p">Desglose transparente de cada partida antes de decidir.</p>
+      </div>
+      <div class="pq-card reveal">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4"/><path d="M5 4h12l-2 4 2 4H5"/></svg>
+        <h3 data-i18n="pq3_h">Nuestros contactos en Alemania</h3>
+        <p data-i18n="pq3_p">Concesionarios y dealers verificados, no intermediarios anónimos.</p>
+      </div>
+      <div class="pq-card reveal">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6h11v9H2z"/><path d="M13 9h4l3 3v3h-7z"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+        <h3 data-i18n="pq4_h">Entrega a domicilio</h3>
+        <p data-i18n="pq4_p">Te lo llevamos a tu puerta en toda la Costa Blanca y España.</p>
+      </div>
+      <div class="pq-card reveal">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v4h4"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
+        <h3 data-i18n="pq5_h">Trámite y matriculación incluidos</h3>
+        <p data-i18n="pq5_p">Aduanas, ITV y matrícula española — todo gestionado por nosotros.</p>
+      </div>
+      <div class="pq-card reveal">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.5 5 5.5.8-4 3.9 1 5.5-5-2.6-5 2.6 1-5.5-4-3.9 5.5-.8z"/></svg>
+        <h3 data-i18n="pq6_h">+40 operaciones cerradas</h3>
+        <p data-i18n="pq6_p">Experiencia real importando y matriculando en la zona.</p>
       </div>
     </div>
   </div>
@@ -750,12 +808,17 @@
 <!-- CONTACT -->
 <section id="contact" class="section">
   <div class="wrap reveal">
-    <div class="eyebrow" data-i18n="ct_eye">Hablemos</div>
-    <h2 data-i18n="ct_h2">Tu próximo vehículo está a un mensaje</h2>
-    <p data-i18n="ct_p">Cuéntanos qué buscas y te preparamos un presupuesto llave en mano sin compromiso.</p>
+    <div class="eyebrow" data-i18n="ct_eye">Tu próximo vehículo, a un mensaje</div>
+    <h2><span data-i18n="ct_h2a">¿No encuentras el coche que buscas?</span> <span class="accent" data-i18n="ct_h2b">Dínoslo.</span></h2>
+    <p data-i18n="ct_p">Buscamos por ti en Alemania, subastas y mercado europeo — y te lo entregamos matriculado en Costa Blanca.</p>
     <div class="contact-cta">
-      <a class="btn btn-wa" href="https://wa.me/34644324195?text=Hola,%20quiero%20importar%20" data-i18n="ct_wa">💬 Escríbenos por WhatsApp</a>
-      <a class="btn btn-gold" href="#calc" data-i18n="ct_calc">Calcular importación</a>
+      <a class="btn btn-wa" href="https://wa.me/34644324195?text=Hola,%20busco%20un%20coche%3A%20" data-i18n="ct_wa">💬 Escríbenos por WhatsApp</a>
+    </div>
+    <p class="ct-reassure" data-i18n="ct_reassure">Sin compromiso · te respondemos en minutos</p>
+    <div class="ct-row">
+      <span>📱 <a href="https://wa.me/34644324195">+34 644 324 195</a></span>
+      <span data-i18n="ct_r2">Respuesta en minutos</span>
+      <span data-i18n="ct_r3">Atención ES · EN · RU</span>
     </div>
   </div>
 </section>
@@ -847,7 +910,14 @@ const I18N={
   tr_b1:"Registrado como profesional en España",tr_b2:"Verificación de historial",tr_b3:"Gestión completa del trámite",tr_b4:"Asistencia con documentación",
   ab_eye:"Quiénes somos",ab_h2:"Caras visibles, no un formulario",ab_p1:"Somos un equipo afincado en la Costa Blanca que une la precisión alemana con el trato cercano del Mediterráneo. Llevamos años importando, matriculando y entregando vehículos sin que el cliente tenga que pisar una oficina.",ab_p2:"Hablamos tu idioma —español, inglés y ruso— y respondemos como lo haría un amigo que entiende de coches y de burocracia española.",ab_ph:"El equipo de ITV Costa Blanca",
   fq_eye:"Dudas frecuentes",fq_h2:"Preguntas frecuentes",
-  ct_eye:"Hablemos",ct_h2:"Tu próximo vehículo está a un mensaje",ct_p:"Cuéntanos qué buscas y te preparamos un presupuesto llave en mano sin compromiso.",ct_wa:"💬 Escríbenos por WhatsApp",ct_calc:"Calcular importación",
+  pq_eye:"Por qué nosotros",pq_h2:"Lo que nos diferencia",pq_p:"Sin sorpresas, sin papeleo y sin mover el coche. Nos encargamos de todo, de principio a fin.",
+  pq1_h:"Llave en mano",pq1_p:"Precio final cerrado, sin sorpresas ni costes ocultos.",
+  pq2_h:"Precios honestos",pq2_p:"Desglose transparente de cada partida antes de decidir.",
+  pq3_h:"Nuestros contactos en Alemania",pq3_p:"Concesionarios y dealers verificados, no intermediarios anónimos.",
+  pq4_h:"Entrega a domicilio",pq4_p:"Te lo llevamos a tu puerta en toda la Costa Blanca y España.",
+  pq5_h:"Trámite y matriculación incluidos",pq5_p:"Aduanas, ITV y matrícula española — todo gestionado por nosotros.",
+  pq6_h:"+40 operaciones cerradas",pq6_p:"Experiencia real importando y matriculando en la zona.",
+  ct_eye:"Tu próximo vehículo, a un mensaje",ct_h2a:"¿No encuentras el coche que buscas?",ct_h2b:"Dínoslo.",ct_p:"Buscamos por ti en Alemania, subastas y mercado europeo — y te lo entregamos matriculado en Costa Blanca.",ct_wa:"💬 Escríbenos por WhatsApp",ct_reassure:"Sin compromiso · te respondemos en minutos",ct_r2:"Respuesta en minutos",ct_r3:"Atención ES · EN · RU",
   ft_about:"Importación llave en mano de coches, motos y náutica. De Alemania, el mundo o subasta — matriculado en España.",ft_serv:"Servicios",ft_s1:"Búsqueda y origen",ft_s2:"Transporte",ft_s3:"ITV & matriculación",ft_s4:"Compra en subasta",
   ft_comp:"Empresa",ft_c1:"Quiénes somos",ft_c2:"Vehículos",ft_c3:"FAQ",ft_c4:"Contacto",ft_legal:"Legal",ft_l1:"Aviso legal",ft_l2:"Privacidad",ft_l3:"Cookies",ft_loc:"Dénia · Costa Blanca · Alicante",ft_rights:"Todos los derechos reservados.",ft_made:"Hecho en Costa Blanca · ES · EN · RU",
   ck_text:"Usamos cookies propias y de terceros para analítica y mejorar tu experiencia. Puedes aceptar todas o solo las necesarias.",ck_more:"Más información",ck_accept:"Aceptar todas",ck_reject:"Solo necesarias",
@@ -875,7 +945,14 @@ const I18N={
   tr_b1:"Registered as a professional in Spain",tr_b2:"History verification",tr_b3:"Full ITV handling",tr_b4:"Documentation assistance",
   ab_eye:"About us",ab_h2:"Real faces, not a form",ab_p1:"We are a Costa Blanca–based team blending German precision with Mediterranean warmth. We've spent years importing, registering and delivering vehicles without the client setting foot in an office.",ab_p2:"We speak your language — Spanish, English and Russian — and reply like a friend who knows cars and Spanish bureaucracy.",ab_ph:"The ITV Costa Blanca team",
   fq_eye:"Common questions",fq_h2:"Frequently asked questions",
-  ct_eye:"Let's talk",ct_h2:"Your next vehicle is one message away",ct_p:"Tell us what you're after and we'll prepare a no-obligation turn-key quote.",ct_wa:"💬 Message us on WhatsApp",ct_calc:"Calculate import",
+  pq_eye:"Why us",pq_h2:"What sets us apart",pq_p:"No surprises, no paperwork, without moving your car. We handle everything, end to end.",
+  pq1_h:"Turn-key",pq1_p:"A closed final price — no surprises, no hidden costs.",
+  pq2_h:"Honest pricing",pq2_p:"A transparent breakdown of every item before you decide.",
+  pq3_h:"Our contacts in Germany",pq3_p:"Verified dealers and partners, not anonymous middlemen.",
+  pq4_h:"Home delivery",pq4_p:"We bring it to your door across Costa Blanca and Spain.",
+  pq5_h:"Paperwork & registration included",pq5_p:"Customs, ITV and Spanish plates — all handled by us.",
+  pq6_h:"+40 deals closed",pq6_p:"Real experience importing and registering in the area.",
+  ct_eye:"Your next vehicle, one message away",ct_h2a:"Can't find the car you're looking for?",ct_h2b:"Tell us.",ct_p:"We search for you in Germany, auctions and the European market — and deliver it registered in Costa Blanca.",ct_wa:"💬 Message us on WhatsApp",ct_reassure:"No commitment · we reply in minutes",ct_r2:"Reply in minutes",ct_r3:"Support ES · EN · RU",
   ft_about:"Turn-key import of cars, motorbikes and marine craft. From Germany, the world or auction — registered in Spain.",ft_serv:"Services",ft_s1:"Sourcing",ft_s2:"Transport",ft_s3:"ITV & registration",ft_s4:"Auction buying",
   ft_comp:"Company",ft_c1:"About us",ft_c2:"Vehicles",ft_c3:"FAQ",ft_c4:"Contact",ft_legal:"Legal",ft_l1:"Legal notice",ft_l2:"Privacy",ft_l3:"Cookies",ft_loc:"Dénia · Costa Blanca · Alicante",ft_rights:"All rights reserved.",ft_made:"Made in Costa Blanca · ES · EN · RU",
   ck_text:"We use first- and third-party cookies for analytics and to improve your experience. You can accept all or only the necessary ones.",ck_more:"Learn more",ck_accept:"Accept all",ck_reject:"Necessary only",
@@ -903,7 +980,14 @@ const I18N={
   tr_b1:"Зарегистрирован как профессионал в Испании",tr_b2:"Проверка истории",tr_b3:"Полное ведение ITV",tr_b4:"Помощь с документами",
   ab_eye:"О нас",ab_h2:"Живые люди, а не форма",ab_p1:"Мы — команда на Коста-Бланке, соединяющая немецкую точность со средиземноморским теплом. Годами импортируем, оформляем и доставляем транспорт так, что клиенту не нужно заходить ни в один офис.",ab_p2:"Говорим на твоём языке — испанский, английский и русский — и отвечаем как друг, который разбирается в машинах и в испанской бюрократии.",ab_ph:"Команда ITV Costa Blanca",
   fq_eye:"Частые вопросы",fq_h2:"Часто задаваемые вопросы",
-  ct_eye:"Давай обсудим",ct_h2:"Твоя следующая машина — в одном сообщении",ct_p:"Расскажи, что ищешь, и мы подготовим расчёт под ключ без обязательств.",ct_wa:"💬 Написать в WhatsApp",ct_calc:"Рассчитать импорт",
+  pq_eye:"Почему мы",pq_h2:"Чем мы отличаемся",pq_p:"Без сюрпризов, без бумаг и не двигая машину. Берём всё на себя — от и до.",
+  pq1_h:"Под ключ",pq1_p:"Финальная фиксированная цена — без сюрпризов и скрытых доплат.",
+  pq2_h:"Честные цены",pq2_p:"Прозрачная разбивка по каждой статье до решения.",
+  pq3_h:"Наши контакты в Германии",pq3_p:"Проверенные дилеры и партнёры, а не безымянные посредники.",
+  pq4_h:"Доставка до двери",pq4_p:"Привезём к порогу по всей Коста-Бланке и Испании.",
+  pq5_h:"Оформление и учёт включены",pq5_p:"Растаможка, ITV и испанские номера — всё берём на себя.",
+  pq6_h:"+40 закрытых сделок",pq6_p:"Реальный опыт импорта и оформления в регионе.",
+  ct_eye:"Твоё авто — в одном сообщении",ct_h2a:"Не нашёл нужную машину?",ct_h2b:"Скажи нам.",ct_p:"Ищем за тебя в Германии, на аукционах и европейском рынке — и привозим с испанскими номерами на Коста-Бланку.",ct_wa:"💬 Напиши нам в WhatsApp",ct_reassure:"Без обязательств · ответим за минуты",ct_r2:"Ответ за минуты",ct_r3:"Поддержка ES · EN · RU",
   ft_about:"Импорт под ключ авто, мото и водного транспорта. Из Германии, со всего мира или с аукциона — с оформлением в Испании.",ft_serv:"Услуги",ft_s1:"Поиск и подбор",ft_s2:"Транспорт",ft_s3:"ITV и оформление",ft_s4:"Покупка с аукциона",
   ft_comp:"Компания",ft_c1:"О нас",ft_c2:"Авто",ft_c3:"FAQ",ft_c4:"Контакты",ft_legal:"Правовое",ft_l1:"Правовая информация",ft_l2:"Конфиденциальность",ft_l3:"Cookies",ft_loc:"Дения · Коста-Бланка · Аликанте",ft_rights:"Все права защищены.",ft_made:"Сделано на Коста-Бланке · ES · EN · RU",
   ck_text:"Мы используем собственные и сторонние cookie для аналитики и улучшения работы сайта. Можно принять все или только необходимые.",ck_more:"Подробнее",ck_accept:"Принять все",ck_reject:"Только необходимые",
